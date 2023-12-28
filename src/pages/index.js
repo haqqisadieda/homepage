@@ -116,17 +116,6 @@ export default function Home() {
           </Heading>
           <List>
             <ListItem>
-              <Link href="https://github.com/haqqisadieda" isExternal>
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<IoLogoGithub />}
-                >
-                  @haqqisadieda
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
               <Link
                 href="https://www.linkedin.com/in/pandegahaqqisadieda/"
                 isExternal
@@ -137,6 +126,17 @@ export default function Home() {
                   leftIcon={<IoLogoLinkedin />}
                 >
                   Pandega Haqqi Sadieda
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://github.com/haqqisadieda" isExternal>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoGithub />}
+                >
+                  @haqqisadieda
                 </Button>
               </Link>
             </ListItem>

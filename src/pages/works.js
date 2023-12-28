@@ -5,7 +5,7 @@ import { WorkGridItem } from "@/components/gridItem";
 
 import thumbWork1 from "../../public/images/works/work1.png";
 
-const Work = () => {
+const Works = () => {
   return (
     <Layout>
       <Container>
@@ -24,10 +24,43 @@ const Work = () => {
               project.
             </WorkGridItem>
           </Section>
+          <Section>
+            <WorkGridItem
+              id="lawanglangit"
+              title="Lawang Langit"
+              thumbnail={thumbWork1}
+            >
+              Lawang Langit Homepage for Fundarising purpose, this just
+              prototype so it&apos;s not complete yet. My first Frontend
+              project.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="lawanglangit"
+              title="Lawang Langit"
+              thumbnail={thumbWork1}
+            >
+              Lawang Langit Homepage for Fundarising purpose, this just
+              prototype so it&apos;s not complete yet. My first Frontend
+              project.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="lawanglangit"
+              title="Lawang Langit"
+              thumbnail={thumbWork1}
+            >
+              Lawang Langit Homepage for Fundarising purpose, this just
+              prototype so it&apos;s not complete yet. My first Frontend
+              project.
+            </WorkGridItem>
+          </Section>
         </SimpleGrid>
       </Container>
     </Layout>
   );
 };
 
-export default Work;
+export default Works;

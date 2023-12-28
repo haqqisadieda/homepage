@@ -104,7 +104,7 @@ const Navbar = (props) => {
                   Posts
                 </MenuItem>
                 <MenuItem
-                  as={MenuLink}
+                  as={Link}
                   href="https//github.com/haqqisadieda"
                   isExternal
                 >

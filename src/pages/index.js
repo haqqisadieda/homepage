@@ -5,6 +5,9 @@ import {
   Heading,
   Image,
   Link,
+  List,
+  ListItem,
+  SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
 
@@ -14,6 +17,8 @@ import Layout from "@/components/articles";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "@/components/bio";
 import NextLink from "next/link";
+import { GridItem } from "@/components/gridItem";
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -65,12 +70,7 @@ export default function Home() {
             playing some games, and reading some books. Currently, he is
             learning Fullstack Development especially Javascript. You can see
             his journey of learning in his{" "}
-            <Link
-              as={NextLink}
-              href="https://github.com/haqqisadieda"
-              passHref
-              isExternal
-            >
+            <Link href="https://github.com/haqqisadieda" isExternal>
               Github
             </Link>
             {""}.
@@ -109,6 +109,49 @@ export default function Home() {
             I ♥
           </Heading>
           <Paragraph>Music, Games, Reading, and Coding.</Paragraph>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Online
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/haqqisadieda" isExternal>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoGithub />}
+                >
+                  @haqqisadieda
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/pandegahaqqisadieda/"
+                isExternal
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoLinkedin />}
+                >
+                  Pandega Haqqi Sadieda
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.instagram.com/pndg__/" isExternal>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoInstagram />}
+                >
+                  @pndg__
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>

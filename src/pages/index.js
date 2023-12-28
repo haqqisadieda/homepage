@@ -127,20 +127,6 @@ export default function Home() {
               </Link>
             </ListItem>
             <ListItem>
-              <Link
-                href="https://www.linkedin.com/in/pandegahaqqisadieda/"
-                isExternal
-              >
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<IoLogoLinkedin />}
-                >
-                  Pandega Haqqi Sadieda
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
               <Link href="https://www.instagram.com/pndg__/" isExternal>
                 <Button
                   variant="ghost"
